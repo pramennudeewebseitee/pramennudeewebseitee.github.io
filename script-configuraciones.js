@@ -55,10 +55,10 @@ if (bloquearDominio) {
     if (window.top !== window.self) {
         const iframeReferrer = document.referrer;
         const allowedDomains = [
-            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
-            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
-            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
-            // "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
+            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
+            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
+            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
+            // "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
             "http://127.0.0.1:5500",
             "http://127.0.0.1:5501"
         ];
