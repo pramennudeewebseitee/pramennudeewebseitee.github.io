@@ -1,21 +1,19 @@
-let bloqueoUS =  false;
-let bloquearDominio = false;
+let bloqueoUS = true;
+let bloquearDominio = true;
 let bloquearDominioyservidores = false;
 let publicidad = false;
 
-
 // Histats.com  START  (aync)
-var _Hasync = _Hasync || [];
-_Hasync.push(['Histats.start', '1,4914043,4,327,112,62,00011001']);
+  var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4955206,4,15,170,40,00000001']);
 _Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
-(function () {
-    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-    hs.src = ('//s10.histats.com/js15_as.js');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 })();
-// Histats.com  END
-
+//Histats.com  END 
 
 if (bloqueoUS) {
 
