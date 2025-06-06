@@ -55,10 +55,10 @@ if (bloquearDominio) {
     if (window.top !== window.self) {
         const iframeReferrer = document.referrer;
         const allowedDomains = [
-            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
-            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
-            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
-            // "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/",
+            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
+            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
+            "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
+            // "https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/p/prueba-de-saturacion.html",
             "http://127.0.0.1:5500",
             "http://127.0.0.1:5501"
         ];
@@ -75,7 +75,7 @@ if (bloquearDominio) {
             if (referrerEncoded !== "desconocido") {
                 // accesoPermitido = false;
                 alert("Para continuar viendo ingrese a https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com");
-                window.top.location.href = `https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/?acceso=${referrerEncoded}`;
+                window.top.location.href = `https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com?acceso=${referrerEncoded}`;
                 // window.top.location = window.self.location.href;
                 // window.close();
                 // window.location.href = "about:blank"; // Alternativa si el cierre falla
@@ -112,7 +112,7 @@ if (bloquearDominioyservidores) {
         if (!iframeReferrer || !allowedDomains.some(domain => iframeReferrer.startsWith(domain))) {
             const referrerEncoded = encodeURIComponent(iframeReferrer || "desconocido");
             // alert("Acceso no permitido desde iframe externo. Redirigiendo...");
-            if(referrerEncoded !== "desconocido") window.top.location.href = `https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/?acceso=${referrerEncoded}`;
+            if(referrerEncoded !== "desconocido") window.top.location.href = `https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com?acceso=${referrerEncoded}`;
         } else {
             console.log("Iframe permitido desde dominio autorizado:", iframeReferrer);
         }
@@ -126,7 +126,7 @@ if (bloquearDominioyservidores) {
             const referrerEncoded = encodeURIComponent(iframeReferrer || "desconocido");
             alert("currentPath: "+currentPath+"\nreferrerEncoded: "+referrerEncoded+"\niframeReferrer: "+iframeReferrer+"\nwindow.top: "+window.top.location +"\nwindow.self: "+window.self.location);
             // alert("Acceso no permitido directo a servidores. Redirigiendo...");
-            if(referrerEncoded !== "desconocido") window.location.href = `https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com/?acceso=Servidores`;
+            if(referrerEncoded !== "desconocido") window.location.href = `https://sopracan-28-04-flotodsplaaerbloeer.blogspot.com?acceso=prueba-de-saturacion`;
         } else {
             console.log("Acceso a /prueba-de-saturacion/ permitido desde dominio autorizado:", iframeReferrer);
         }
