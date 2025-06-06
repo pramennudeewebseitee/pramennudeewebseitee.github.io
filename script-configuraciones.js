@@ -1,5 +1,5 @@
-let bloqueoUS = true;
-let bloquearDominio = true;
+let bloqueoUS =  false;
+let bloquearDominio = false;
 let bloquearDominioyservidores = false;
 let publicidad = false;
 
