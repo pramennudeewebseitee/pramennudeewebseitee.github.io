@@ -1,7 +1,7 @@
-let bloqueoUS = true;
+let bloqueoUS = false;
 let bloquearDominio = false;
 let bloquearDominioyservidores = false;
-let publicidad = false;
+let publicidad = true;
 
 // Histats.com  START  (aync)
   var _Hasync= _Hasync|| [];
