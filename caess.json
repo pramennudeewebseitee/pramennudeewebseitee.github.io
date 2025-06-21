@@ -5,6 +5,16 @@
         "type": "hls",
         "title": "Disney Channel"
     },
+       "ch_goooooo": {
+        "url": "https://www.google.com/",
+        "type": "embed",
+        "title": "Nick"
+    },
+        "ch_yootoo": {
+        "url": "https://www.youtube.com/?app=desktop&hl=es",
+        "type": "embed",
+        "title": "Nick"
+    },
     "ch_6812c33c8b2e8": {
         "url": "https://live1.cl.cdn.lla.vtrplay.com/foxsports1hdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD",
         "type": "hls",
