@@ -1,4 +1,3 @@
-
 let channelList = [
     {
         name: '',
@@ -8,8 +7,6 @@ let channelList = [
         number: 0,
     }
 ]
-
-
 
 const CHANNELS = new Map([
     // C7
@@ -21,7 +18,7 @@ const CHANNELS = new Map([
     // C4
     ...["TmFuZHV0aV9QeQ==","QW1lcmljYV9QWQ==","QTI0X1BZ","RXZlbnRvczNfVVk=", "RXZlbnRvc18yX1VZ", "RVNQTjJfVVk=", "RXZlbnRvczJfUFk=", "RVNQTl9QWQ==", "RVNQTjJfUFk=", "NVJUVg==", "Q2FuYWxfMTNfUmlvXzR0bw==", "Q2FuYWwxMF9SaW9fTmVncm8=", "Q2FuYWxfNV9Sb3Nhcmlv", "VFZfQ2FtYXJh", "Q0hfMTJfUG9zYWRhcw==", "Q0JBMjQ=", "TWl4VFY=", "TG9jYWxfQ2FybG9zX1Bheg==", "Q2FuYWwxMF9DQkFfSEQ=", "VU5JQ0FOQUxfQzQ=", "TGF0YW1fUnVyYWw=", "U29tb3NfQ29ycmllbnRlcw==", "U29tb3NfU2FsdGE=", "U29tb3NfUmFmYWVsYQ==", "U29tb3NfUmVzaXN0ZW5jaWE=", "U29tb3NfRWxfVmFsbGU=", "Q2FuYWxfQ2l1ZGFkX01EUQ==", "NV9EaWFzX1BZ", "VGVsZWZlX0ludGVybmFjaW9uYWw=", "Q0hfMTNfQ29ycmllbnRlcw==", "U2hvd19TcG9ydHM=", "Q0hfOV9SZXNpc3RlbmNpYQ==", "VEVMRUZVVFVST19DNA==", "VGVsZWZlX05ldXF1ZW4=", "VGVsZWZlX1NhbHRh", "U05UX0M0", "UEFSQVZJU0lPTl9DNA==", "Tk9USUNJQVNfUFlfQzQ=", "TEFfVEVMRV9DNA==", "U1VSX1RWX0M0", "Q2FuYWwxMlVSVQ==","Q2FuYWxfMTFfRm9ybW9zYQ==", "U29tb3NfUGFyYW5h", "Q2FuYWw0X1VSVQ==", "RVNQTl9VWQ==", "SEVJX05PVw==", "SEJPSEQ=", "VFZfUHVibGljYV9JbnRlcm5hY2lvbmFs", "Q2FuYWwxMF9VUlU=","Q2FuYWxfMl9NRFFfTEND","UkND","RWR1Y2FuYWw=","VGVsZWZlX01EUV9IRA==", "UlBDX0M0"].map(k => [k, 4]),
     // C3
-    ...["RXZlbnRvc19QWQ==", "Q2FuYWw3X1NERQ==","Qmxvb21iZXJn", "Q2FuYWxfVQ==", "RnJhbmNlMjRfRmxvdw==", "VFZfTmFjaW9uYWxfVXk=", "UmVkZV9SZWNvcmQ=", "U29tb3NfQmFoaWFfQmxhbmNh", "Q2FuYWxfM19Sb3Nhcmlv", "Q2FuYWw3X0JhaGlhX0JsYW5jYQ==", "Q2FuYWxfMTNfU0ZF", "Q2FuYWw5X0JhaGlhX0JsYW5jYQ==", "TmF0R2VvSEQ=", "VE5UX0hEX0FyZw==","VE5UU2VyaWVz", "Q2FydG9vbk5ldHdvcms=", "Tmlja2Vsb2Rlb24=","Q2FuYWxfNzlfTURR", "QWR1bHRfU3dpbQ==", "U2VuYWxfTWFyaWE=", "RXZlbnRvczFIRA"].map(k => [k, 3])
+    ...["RXZlbnRvc19QWQ==","Q2FuYWw3X1NERQ==","Qmxvb21iZXJn", "Q2FuYWxfVQ==", "RnJhbmNlMjRfRmxvdw==", "VFZfTmFjaW9uYWxfVXk=", "UmVkZV9SZWNvcmQ=", "U29tb3NfQmFoaWFfQmxhbmNh", "Q2FuYWxfM19Sb3Nhcmlv", "Q2FuYWw3X0JhaGlhX0JsYW5jYQ==", "Q2FuYWxfMTNfU0ZF", "Q2FuYWw5X0JhaGlhX0JsYW5jYQ==", "TmF0R2VvSEQ=", "VE5UX0hEX0FyZw==","VE5UU2VyaWVz", "Q2FydG9vbk5ldHdvcms=", "Tmlja2Vsb2Rlb24=","Q2FuYWxfNzlfTURR", "QWR1bHRfU3dpbQ==", "U2VuYWxfTWFyaWE=", "RXZlbnRvczFIRA"].map(k => [k, 3])
 ]);
 
 function getChannelNumber(getURL) {
@@ -30,7 +27,7 @@ function getChannelNumber(getURL) {
 
 function getChannelKeys(getURL) {
     const channelMap = {
-        "QmFuZGVpcmFudGVz": { keyId: "0b4f56d5c19b45fb3e75a73b6ec06e6c", key: "c464e2b6ded2b52e1e7753b3a859abce" }, //Bandeirantes
+       "QmFuZGVpcmFudGVz": { keyId: "0b4f56d5c19b45fb3e75a73b6ec06e6c", key: "c464e2b6ded2b52e1e7753b3a859abce" }, //Bandeirantes
         "QWxsamF6emVyYQ==": { keyId: "137a1a70fa118b695118a3aad9485b13", key: "7c35ca36d4452dfa03d88725a0d16105" }, //Alljazzera
         "QXJpcmFuZw==": { keyId: "436d78a75fad9bdcc6d409640c116a62", key: "c77471ac3b694513a9c5ff68b8d4fac5" }, //Arirang
         "SEVJX05PVw==": { keyId: "a8922522d07bc6aea96decd1c61553a6", key: "dd9d597ceaf05fa903587ff1a657a04e" }, //HEI_NOW
@@ -53,36 +50,59 @@ function getChannelKeys(getURL) {
         "VFNOX05lY29jaGVh": { keyId: "719aa3a5e270c7f69eba374ed80d7986", key: "97ac59118cf4cf242e2c31e87cd38e1e" }, //TSN_Necochea
         "Q2FuYWw5X0xhX1Jpb2ph": { keyId: "719aa3a5e270c7f69eba374ed80d7986", key: "97ac59118cf4cf242e2c31e87cd38e1e" }, //Canal9_La_Rioja
         "RGF5c3Rhcg==": { keyId: "719aa3a5e270c7f69eba374ed80d7986", key: "97ac59118cf4cf242e2c31e87cd38e1e" }, //Daystar
+        
+        "": { keyId: "", key: "" }, //
         "Q2FuYWxfOTA=": { keyId: "ca50103f3285421e8be7da8c0c0e7a54", key: "3608e92a6feddf228c1f035ebb764426" }, //Canal_90
         "Q2FuYWxfMTFfRm9ybW9zYQ==": { keyId: "78cbce875d90e04f3f2b2e26261d5255", key: "d6c6a3c3ec898483608ff39e086cad66" }, //Canal_11_Formosa
-
+        "": { keyId: "", key: "" }, //
         "U2VuYWxfTWFyaWE=": { keyId: "d456fba3fccb4c06a0f4776fe412400b", key: "ca5530ffe42a38759d3887c82d6a909a" }, //Senal_Maria
         "Q2FuYWw3X1NERQ==": { keyId: "eec52ca8f4d229ae6aae86b6835256ed", key: "506afbd8be37e388f5d3ceb7992069d4" }, //Canal7_SDE
         "Q2FuYWwxMF9SaW9fTmVncm8=": { keyId: "491adb9269c5c8ab41f83936d0b4a68f", key: "7ab85b000d8b5a06f542aff956bcb007" }, //Canal10_Rio_Negro
         "NVJUVg==": { keyId: "7caca846fda0ac308553f7eb7284a596", key: "256934a336abbc242378af4a2dfcac4e" }, //5RTV
+        "": { keyId: "", key: "" }, //
         "UkND": { keyId: "d8479ae2a7cc939e8382c8851927425d", key: "d1f89fc694800645ae926d9c5f13a1f6" }, //RCC
         "RWR1Y2FuYWw=": { keyId: "4a51992671bd007fbf5d5c257ee62ea0", key: "69c4603a7136ec9eb515f8e0ca9c275c" }, //Educanal
         "TmFuZHV0aV9QeQ==": { keyId: "46c3d8c42bb9799e5de5792e3fb45de4", key: "aed06fd292d278aa464da44752b9c313" }, //Nanduti_Py
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
         "Q2FuYWw3X0NhdGFtYXJjYQ==": { keyId: "b97459655c5e6d342bf49cf2bacd4daa", key: "04702a3736ee67d7d5a8cf8ddc36b7ee" }, //Canal7_Catamarca
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
+        
+        
         "Q2FuYWxfM19Gb3Jtb3Nh": { keyId: "fad37e328e1d36e0a5423a1a72d4085b", key: "93fb085bbb8d6583d159c766fca1cfff" }, //Canal_3_Formosa
         "U29tb3NfRm9ybW9zYQ==": { keyId: "ceeb1cfa7ecbc8b22ff9f186287aa4a1", key: "8367cc3655b9fb82d6473f27b3ef9907" }, //Somos_Formosa
+
+
+        "": { keyId: "", key: "" }, //
         "U29tb3NfVHVjdW1hbg==": { keyId: "a2004558039ee95097010029015316b4", key: "29960fc94fbf7a13c9de1308d508bc25" }, //Somos_Tucuman
         "U29tb3NfUGFyYW5h": { keyId: "726c0ccee1985d0d59738bfe8e9aee2b", key: "0ff2c5a2381d8f0b7b92565dceb4ca58" }, //Somos_Parana
         "U29tb3NfQmVsbF9WaWxsZQ==": { keyId: "4dd0d6fab23ee397e603bf1cad49cc3f", key: "84163f0d536884a640a509a9a0c937ee" }, //Somos_Bell_Ville
         "Q2FuYWxfMTBfTURR": { keyId: "5f353c7f02f643da9049646fb835abcf", key: "ae8630fc13b9e4554c56bd0be31be74f" }, //Canal_10_MDQ
         "VGVsZWZlX01EUV9IRA==": { keyId: "cd82180cb606cee7547f58298c4f8fcb", key: "844489c5f007fbe4afa36c8d64528d73" }, //Telefe_MDQ_HD
+        "": { keyId: "", key: "" }, //
         "Q2FuYWxfNzlfTURR": { keyId: "32b5308f8e6d411eab8a8f1576f95e27", key: "0afb56f72dbf8a5555e30a6f086049ac" }, //Canal_79_MDQ
         "Q2FuYWxfMl9NRFFfTEND": { keyId: "30691d3980864458cc24a230708cf003", key: "9f11ac9715b016312f6a222d0886c2af" }, //Canal_2_MDQ_LCC
         "RWNvVHZfVGFuZGls": { keyId: "2bcb0593847aa273102a0546f8d51ce4", key: "f04591c07966e6678462dd94f99da66a" }, //EcoTv_Tandil
         "VW5pdmVyc2lkYWRfTURR": { keyId: "4f6ab7206de81b4f19edcbc735a7f4ca", key: "5d05b9738b9a999a4b7c5b495866c21c" }, //Universidad_MDQ
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
         "RVNQTjJfUFk=": { keyId: "0aab4bd18144c7316c35c74ccce96ddc", key: "3e6db98d9df4747108bd896cba0be57d" }, //ESPN2_PY creo que es 1
         "RVNQTl9QWQ==": { keyId: "4cbc5f5cbac72d38371bb63309e4a9d2", key: "dbc8de27da9726cd2e7659abb08e86ef" }, //ESPN_PY creo que es 2
         "RVNQTjNfVXktUHk=": { keyId: "ed53871dc50dcdc59a6271db3c8c51b3", key: "0c21dc8629e3f2e6fe9efa8b80dc447e" }, //ESPN3_Uy-Py creo que es 3
+        "": { keyId: "", key: "" }, //
         "RVNQTl9VWQ==": { keyId: "6362e1f36fcb7ee3c47debd9140336ad", key: "9ba1d46c5b9c7a3130a5dabbf7155175" }, //ESPN_UY
         "RVNQTjJfVVk=": { keyId: "0d820100144772fed9f38b83650fa7e1", key: "ded8cc47b29b0eb0b0a87df22e721847" }, //ESPN2_UY
+        "": { keyId: "", key: "" }, //
         "RXZlbnRvc19IRF9VeQ==": { keyId: "48d0e34c8797c5c2a742d2630a8fb975", key: "fb5d12b9d8febe836e5670abd003ddca" }, //Eventos_HD_Uy - Charrua Television
         "RXZlbnRvc18yX1VZ": { keyId: "87bfded2bdfbd3ad9dce4d30b2739fd1", key: "e80b0d66d60fa0a2d24d8b36055a6fef" }, //Eventos_2_UY - Canal 4 Paysandu
         "RXZlbnRvczNfVVk=": { keyId: "f774b06a300783596f27b552226de9c0", key: "4d6256b28b487bcf906bcf0328635747" }, //Eventos3_UY
+        "": { keyId: "", key: "" }, //
+        "": { keyId: "", key: "" }, //
         "RXZlbnRvc19QWQ==": { keyId: "2bdfc30f2a7591e107d8c84458c395dd", key: "dcee0d6420b6b597fba15d3c4411a71e" }, //Eventos_PY
         "RXZlbnRvczJfUFk=": { keyId: "0900ce66b82de0fd07aa8f12a48f29a2", key: "e5556dba688fda637374ab5c87d7cda6" }, //Eventos2_PY
         "Q2FuYWxfMTNfUmlvXzR0bw==": { keyId: "6f4439b8c624ac6a8abba87c3621d580", key: "c8798da6ee3e0934089ab2ab9fe5d5b7" }, //Canal_13_Rio_4to
